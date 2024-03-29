@@ -1,2 +1,6 @@
-﻿  parser_Clear.cpp
-  glGraphics.vcxproj -> C:\Users\damia\Desktop\OpenGlParser-Cpp\x64\Debug\glGraphics.exe
+﻿  command_Texture.cpp
+  main.cpp
+  parser.cpp
+  parser_Command.cpp
+  Generowanie kodu...
+  glGraphics.vcxproj -> D:\Projekty\BaseProjects\BaseProjects\OpenGlParser-Cpp\x64\Debug\glGraphics.exe

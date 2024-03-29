@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6cUll7St4gMwg6C4TFCfqm/3OzPqJWEEtex9k7GqBYasbWCirWArWTA64N8lc0HAdxTrsMy2WZV0oprhEZztdw==",
+  "dgSpecHash": "fgkqgfJiyfA/vxLjnjkWRBIdNnYEC7ib2SRHH0hJzdi7v+GZg2DwbhuRXLkxcI5iKuHHA273Kj4t9Z7aTITPwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\damia\\Desktop\\SmartHome_Editor\\SmartHome_Editor\\SmartHome_Editor.csproj",
+  "projectFilePath": "D:\\Projekty\\BaseProjects\\BaseProjects\\SmartHome_Editor-CSharp\\SmartHome_Editor\\SmartHome_Editor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\damia\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\damia\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

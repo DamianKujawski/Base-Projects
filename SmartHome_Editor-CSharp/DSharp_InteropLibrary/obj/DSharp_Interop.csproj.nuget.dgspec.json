@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\damia\\Desktop\\SmartHome_Editor\\DSharp_InteropLibrary\\DSharp_Interop.csproj": {}
+    "D:\\Projekty\\BaseProjects\\BaseProjects\\SmartHome_Editor-CSharp\\DSharp_InteropLibrary\\DSharp_Interop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\damia\\Desktop\\SmartHome_Editor\\DSharp_InteropLibrary\\DSharp_Interop.csproj": {
+    "D:\\Projekty\\BaseProjects\\BaseProjects\\SmartHome_Editor-CSharp\\DSharp_InteropLibrary\\DSharp_Interop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\damia\\Desktop\\SmartHome_Editor\\DSharp_InteropLibrary\\DSharp_Interop.csproj",
+        "projectUniqueName": "D:\\Projekty\\BaseProjects\\BaseProjects\\SmartHome_Editor-CSharp\\DSharp_InteropLibrary\\DSharp_Interop.csproj",
         "projectName": "DSharp_Interop",
-        "projectPath": "C:\\Users\\damia\\Desktop\\SmartHome_Editor\\DSharp_InteropLibrary\\DSharp_Interop.csproj",
+        "projectPath": "D:\\Projekty\\BaseProjects\\BaseProjects\\SmartHome_Editor-CSharp\\DSharp_InteropLibrary\\DSharp_Interop.csproj",
         "packagesPath": "C:\\Users\\damia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\damia\\Desktop\\SmartHome_Editor\\DSharp_InteropLibrary\\obj\\",
+        "outputPath": "D:\\Projekty\\BaseProjects\\BaseProjects\\SmartHome_Editor-CSharp\\DSharp_InteropLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

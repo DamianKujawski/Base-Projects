@@ -1,0 +1,12 @@
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\bin\Debug\net7.0-windows\DSharp_Interop.deps.json
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\bin\Debug\net7.0-windows\DSharp_Interop.dll
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\bin\Debug\net7.0-windows\DSharp_Interop.pdb
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\obj\Debug\net7.0-windows\DSharp_Interop.csproj.AssemblyReference.cache
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\obj\Debug\net7.0-windows\DSharp_Interop.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\obj\Debug\net7.0-windows\DSharp_Interop.AssemblyInfoInputs.cache
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\obj\Debug\net7.0-windows\DSharp_Interop.AssemblyInfo.cs
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\obj\Debug\net7.0-windows\DSharp_Interop.csproj.CoreCompileInputs.cache
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\obj\Debug\net7.0-windows\DSharp_Interop.dll
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\obj\Debug\net7.0-windows\refint\DSharp_Interop.dll
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\obj\Debug\net7.0-windows\DSharp_Interop.pdb
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\obj\Debug\net7.0-windows\ref\DSharp_Interop.dll

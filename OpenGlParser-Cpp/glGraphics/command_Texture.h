@@ -22,7 +22,7 @@ public:
 
 
     std::string Get_Description() override {
-        return "Draw Texture [Index Point.x Point.y Size.x Size.y]";
+        return "Draw Texture [Index TextureID Point.x Point.y Size.x Size.y]";
     }
 
     CMD_RESULT Execute(const std::string& args, CommandData_t& outCommandData) override;
