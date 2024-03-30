@@ -206,7 +206,7 @@ delete _neuralNetwork;
 Simplified Unit Test:
 
 ```
-
+---
 ```
 
 ## SmartHome_Editor
@@ -214,7 +214,7 @@ Simplified Unit Test:
 Simplified Unit Test:
 
 ```
-
+---
 ```
 
 ## CrowdSimulation
