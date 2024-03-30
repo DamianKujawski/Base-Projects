@@ -117,6 +117,33 @@ delete _mcuSimulation;
 
 ![neural](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/0f2c472c-2453-43ae-8f2b-82e51f188e38)
 
+```
+project-root/
+│
+├── include/
+│   ├── Define.h
+│   ├── NeuralNetwork_Builder.h
+│   ├── Project.h
+│   └── Struct.h
+│
+└── src/
+    ├── main.cpp
+    └── main-NeuralNetwork/
+        ├── NeuralNetwork_Builder/
+        │   └── NeuralNetwork_FeedForward/
+        │       ├── NeuralNetwork/
+        │       │   ├── NeuralNetwork_FeedForwardCalculator.cpp
+        │       │   ├── NeuralNetwork_LayerErrors.cpp
+        │       │   └── NeuralNetwork_WeightInitializer.cpp
+        │       ├── NeuralNetwork_ActivationFunction.h
+        │       ├── NeuralNetwork_FeedForwardCalculator.h
+        │       ├── NeuralNetwork_LayerErrors.h
+        │       ├── NeuralNetwork_WeightInitializer.h
+        │       └── NeuralNetwork_FeedForward.h
+        ├── NeuralNetwork_Builder.cpp
+        └── NeuralNetwork_FeedForward.cpp
+```
+
 Simplified Unit Test:
 
 ```
