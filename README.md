@@ -118,6 +118,84 @@ delete _mcuSimulation;
 Simplified Unit Test:
 
 ```
+void Test_NeuralNetwork(NeuralNetwork_FeedForward* neuralNetwork, std::vector<std::vector<double>>* testingInputs)
+{
+    for (size_t i = 0; i < (*testingInputs).size(); ++i)
+    {
+        std::vector<double> _input = (*testingInputs)[i];
+        std::vector<double> _output = (*neuralNetwork).FeedForward(_input);
+
+        Logger::WriteMessage("Input: [");
+        for (size_t j = 0; j < _input.size(); ++j)
+        {
+            Logger::WriteMessage(std::to_string(_input[j]).c_str());
+            if (j < _input.size() - 1)
+                Logger::WriteMessage(", ");
+        }
+        Logger::WriteMessage("], Output: ");
+        Logger::WriteMessage(std::to_string(_output[0]).c_str());
+        Logger::WriteMessage(_output[0] >= 0.5 ? " (Sine Wave)\n" : " (Not Sine Wave)\n");
+    }
+}
+
+void Train_NeuralNetwork(NeuralNetwork_FeedForward* neuralNetwork, TrainingData_t* trainingData, int iterationsCnt)
+{
+    for (int epoch = 0; epoch < iterationsCnt; ++epoch)
+    {
+        for (size_t i = 0; i < (*trainingData).inputs.size(); ++i)
+        {
+            std::vector<double> input = (*trainingData).inputs[i];
+            std::vector<double> target = (*trainingData).results[i];
+
+            (*neuralNetwork).Train(input, target);
+        }
+    }
+}
+
+
+NeuralNetwork_Builder* _neuralNetwork_Builder = new NeuralNetwork_Builder();
+NeuralNetwork_FeedForward* _neuralNetwork = _neuralNetwork_Builder
+    ->Set_Size_InputNodes(10)
+    ->Set_Size_HiddenNodes(10)
+    ->Set_Size_OutputNodes(1)
+    ->Set_LearningRate(0.1)
+    ->Build();
+
+// Step 1: Create training data
+TrainingData_t _trainingData
+{
+    {
+        {0.0, 0.25, 0.5, 0.75, 1.0, 0.75, 0.5, 0.25, 0.0, -0.25},   // 1 - Sine
+        {0.1, 0.35, 0.6, 0.85, 1.1, 0.85, 0.6, 0.35, 0.1, -0.15},   // 1 - Shifted Sine Wave
+        {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0},         // 0
+        {0.2, 0.4, 0.6, 0.8, 1.0, 0.8, 0.6, 0.4, 0.2, 0.0},         // 1 - Sine
+        {0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3}          // 0
+    },
+    {
+        {1},
+        {1},
+        {0},
+        {1},
+        {0}
+    }
+};
+
+// Step 2: Train Neural Network
+Train_NeuralNetwork(_neuralNetwork, &_trainingData, 10000);
+
+// Step 3: Create test data
+std::vector<std::vector<double>> _testingInputs =
+{
+    {0.05, 0.3, 0.55, 0.8, 1.05, 0.8, 0.55, 0.3, 0.05, -0.2},       // Different Sine Wave pattern
+    {0.15, 0.35, 0.55, 0.75, 0.95, 0.75, 0.55, 0.35, 0.15, -0.05},  // Another Different Sine Wave pattern
+    {0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0}              // Non-Sine Wave pattern
+};
+
+// Step 4: Test the Neural Network with different input vectors
+Test_NeuralNetwork(_neuralNetwork, &_testingInputs);
+
+delete _neuralNetwork_Builder;
+delete _neuralNetwork;
 
 ```
 
