@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Projekty\ESP32asPLC-ansiC\MEMO\x64\Debug\MEMO.exe</FullPath>
+      <FullPath>D:\Projekty\BaseProjects\BaseProjects\ESP32asPLC-ansiC\x64\Debug\MEMO.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -27,7 +27,9 @@ int main()
     MCU_t* _mcuSimulation = MCU
     (
         &(MEM_t) { (unsigned char*)_romProgram, sizeof(_romProgram) },
-        &(MEM_t) { _ramData, sizeof(_ramData) }
+        & (MEM_t) {
+        _ramData, sizeof(_ramData)
+    }
     );
 
     _mcuSimulation->Run();
@@ -44,9 +46,5 @@ int main()
     {
         printf("%d ", _ramData[i]); // Print the current element followed by a space
     }
-
-
-
-    (void)getchar();
 }
 

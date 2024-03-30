@@ -68,7 +68,7 @@
         for (pc = 0; pc < _romSize; pc += 2)
         {
             uint8_t _oppcode = _romProgram[pc] & 0x0F;
-            uint16_t _arg = ((_romProgram[pc] & 0xF0) << 4) | _romProgram[pc + 1];
+            uint8_t _arg = ((_romProgram[pc] & 0xF0) << 4) | _romProgram[pc + 1];
 
             instructions->instructions[_oppcode].InstructionFunc(&instructions->memory, _arg);
         }
