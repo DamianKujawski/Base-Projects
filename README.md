@@ -247,6 +247,8 @@ delete _neuralNetwork;
 
 ## OpenGlParser
 
+![work37_h](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/aa6373b9-2d88-4eaa-9f70-a69d22be5ef6)
+
 Simplified Unit Test:
 
 ```
@@ -254,6 +256,8 @@ Simplified Unit Test:
 ```
 
 ## SmartHome_Editor
+
+![work36_h](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/482cbb79-5323-4718-a33f-a163a2408a16)
 
 Simplified Unit Test:
 
