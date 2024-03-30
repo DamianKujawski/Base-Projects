@@ -42,7 +42,7 @@
       │     └── Instructions
       │            └── Opcode.h
       │
-      └── GLOBAL/ <------------------------------------------------ Configuration point
+      └── GLOBAL/ <------------------------------------------------ Configuration
             ├── Types.h
             └── Project.h
 
@@ -143,7 +143,7 @@ delete _mcuSimulation;
 │                                ├── NeuralNetwork_LayerErrors.cpp
 │                                └── NeuralNetwork_WeightInitializer.cpp
 │
-└── GLOBAL/  <------------------------------------------------ Configuration point
+└── GLOBAL/  <------------------------------------------------ Configuration
       ├── Define.h
       ├── Project.h
       └── Struct.h
@@ -293,7 +293,7 @@ Simplified Unit Test:
     │                    ├── DynamicObject2D.cpp
     │                    └── Random.h
     │
-    └── GLOBAL/ <------------------------------------------------ Configuration point
+    └── GLOBAL/ <------------------------------------------------ Configuration
           │
           ├── Define_Colors.h
           ├── Struct.h
