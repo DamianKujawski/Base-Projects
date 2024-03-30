@@ -24,7 +24,7 @@
 
   PLC Unit Emulator.
 
-  ![cpu](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/29d2be9c-ed0d-4af7-b071-97ec6cbef093)
+  ![cpu](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/7ea878ac-2292-4df3-9151-aa3d039e805e)
 
 ```
 .
