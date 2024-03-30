@@ -1,7 +1,6 @@
 # Repository: Base-Projects
 
   Small, base projects, which were used as implementations for larger projects in the future. 
-  > I don not share code from larger applications *** 
 
 ## Content
 
