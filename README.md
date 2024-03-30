@@ -115,6 +115,8 @@ delete _mcuSimulation;
 
 ## NeuralNetwork
 
+![neural](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/0f2c472c-2453-43ae-8f2b-82e51f188e38)
+
 Simplified Unit Test:
 
 ```
