@@ -120,11 +120,6 @@ delete _mcuSimulation;
 ```
 .
 │
-├── GLOBAL/
-│      ├── Define.h
-│      ├── Project.h
-│      └── Struct.h
-│
 ├── include/
 │      └── main-NeuralNetwork/
 │            ├── NeuralNetwork_Builder.h
@@ -147,6 +142,12 @@ delete _mcuSimulation;
 │                                ├── NeuralNetwork_FeedForwardCalculator.cpp
 │                                ├── NeuralNetwork_LayerErrors.cpp
 │                                └── NeuralNetwork_WeightInitializer.cpp
+│
+└── GLOBAL/  <------------------------------------------------ Configuration point
+      ├── Define.h
+      ├── Project.h
+      └── Struct.h
+
 
 .
 │
