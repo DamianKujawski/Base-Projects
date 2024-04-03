@@ -249,6 +249,14 @@ delete _neuralNetwork;
 
 ![work37_h](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/aa6373b9-2d88-4eaa-9f70-a69d22be5ef6)
 
+```
+.
+│
+├── src/
+│   ├── main.c
+│   ├── MCU.c
+```
+
 Simplified Unit Test:
 
 ```
