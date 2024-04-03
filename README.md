@@ -251,15 +251,51 @@ delete _neuralNetwork;
 
 ```
 .
-.
 ├── src/
 │   └── main.cpp
 │         └── main/
-                ├── glWindow/
-                ├── glWindow_Scenes/
-                ├── parser/
-                ├── glWindow.cpp
-                └── parser.cpp
+│               ├── glWindow/
+│               │      ├── glCamera.cpp
+│               │      └── glInput.cpp
+│               │
+│               ├── glWindow_Scenes/
+│               │      ├── base/
+│               │      │     └── glDraw.cpp
+│               │      ├── glScene_Dynamic/
+│               │      │     └── glScene_Dynamic_Driver.cpp
+│               │      └── glScene_Dynamic.cpp
+│               │
+│               ├── parser/
+│               │      ├── base/
+│               │      │     ├── StringMathParser/
+│               │      │     │       └── StringMathTokenizer.cpp
+│               │      │     ├── StringCommandParser.cpp
+│               │      │     └── StringMathParser.cpp
+│               │      │
+│               │      ├── parser_Command/
+│               │      │     ├── command_Line.cpp
+│               │      │     ├── command_Load.cpp
+│               │      │     ├── command_Point.cpp
+│               │      │     ├── command_Remove.cpp
+│               │      │     ├── command_Square.cpp
+│               │      │     ├── command_Switch_Math.cpp
+│               │      │     ├── command_Text.cpp
+│               │      │     └── command_Texture.cpp
+│               │      │     
+│               │      ├── parser_Common/
+│               │      │     ├── command_Exit.cpp
+│               │      │     └── command_Help.cpp
+│               │      │
+│               │      ├── parser_Math/
+│               │      │     ├── parser_Clear.cpp
+│               │      │     ├── parser_Graph.cpp
+│               │      │     └── parser_Switch_Command.cpp
+│               │      │
+│               │      ├── parser_Command.cpp/
+│               │      └── parser_Math.cpp
+│               │
+│               ├── glWindow.cpp
+│               └── parser.cpp
 │
 └── include/
     │
