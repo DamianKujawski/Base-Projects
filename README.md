@@ -252,8 +252,8 @@ delete _neuralNetwork;
 ```
 .
 ├── src/
-│   └── main.cpp
-│         └── main/
+│       ├── main.cpp
+│       └── main/
 │               ├── glWindow/
 │               │      ├── glCamera.cpp
 │               │      └── glInput.cpp
@@ -291,22 +291,66 @@ delete _neuralNetwork;
 │               │      │     ├── parser_Graph.cpp
 │               │      │     └── parser_Switch_Command.cpp
 │               │      │
-│               │      ├── parser_Command.cpp/
+│               │      ├── parser_Command.cpp
 │               │      └── parser_Math.cpp
 │               │
 │               ├── glWindow.cpp
 │               └── parser.cpp
 │
 └── include/
+│         └── main/
+│               ├── glWindow/
+│               │      ├── glCamera.h
+│               │      └── glInput.h
+│               │
+│               ├── glWindow_Scenes/
+│               │      ├── base/
+│               │      │     ├── glDraw/
+│               │      │     │      └── stb_image.h
+│               │      │     ├── glDraw.cpp
+│               │      │     └── glDraw_Base.h
+│               │      ├── glScene_Dynamic/
+│               │      │     └── glScene_Dynamic_Driver.cpp
+│               │      └── glScene_Dynamic.cpp
+│               │
+│               ├── parser/
+│               │      ├── base/
+│               │      │     ├── StringMathParser/
+│               │      │     │       └── StringMathTokenizer.h
+│               │      │     ├── Parser_Base.h
+│               │      │     ├── StringCommandParser.h
+│               │      │     └── StringMathParser.h
+│               │      │
+│               │      ├── parser_Command/
+│               │      │     ├── command_Line.h
+│               │      │     ├── command_Load.h
+│               │      │     ├── command_Point.h
+│               │      │     ├── command_Remove.h
+│               │      │     ├── command_Square.h
+│               │      │     ├── command_Switch_Math.h
+│               │      │     ├── command_Text.h
+│               │      │     └── command_Texture.h
+│               │      │     
+│               │      ├── parser_Common/
+│               │      │     ├── command_Exit.h
+│               │      │     └── command_Help.h
+│               │      │
+│               │      ├── parser_Math/
+│               │      │     ├── parser_Clear.h
+│               │      │     ├── parser_Graph.h
+│               │      │     └── parser_Switch_Command.h
+│               │      │
+│               │      ├── parser_Command.h
+│               │      └── parser_Math.h
+│               │
+│               ├── glWindow.h
+│               └── parser.h
+│
+└── GLOBAL/ <------------------------------------------------ Configuration
     │
-    ├── main
-    │   ├── Scene2D.h
-    │
-    └── GLOBAL/ <------------------------------------------------ Configuration
-          │
-          ├── CMD.h
-          ├── Project.h
-          └── Struct.h
+    ├── CMD.h
+    ├── Project.h
+    └── Struct.h
 
 ```
 
