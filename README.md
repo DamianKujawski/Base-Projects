@@ -171,7 +171,7 @@ delete _neuralNetwork;
 
 ![work37_h](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/aa6373b9-2d88-4eaa-9f70-a69d22be5ef6)
 
-![efesafsef](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/4f7857d3-a19f-46ef-a1ec-81852f071c58)
+![OpenGlEditor](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/4f7857d3-a19f-46ef-a1ec-81852f071c58)
 
 ```
 .
@@ -312,7 +312,7 @@ Simplified Unit Test:
 
 ![work36_h](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/482cbb79-5323-4718-a33f-a163a2408a16) 
 
-![https://damiankjkujawski.github.io/about-me/media/work36_h.mp4](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/f654f493-34bf-43a8-9b7a-90110b2c1cc9)
+![SmartHomeEditor](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/f654f493-34bf-43a8-9b7a-90110b2c1cc9)
 
 
 
@@ -526,7 +526,7 @@ delete _mcuSimulation;
 
   Crowd Simulating Project. Mainly designed for optimization. The main premise in developing this project is for the object not to plan steps ahead.
        
-  ![crowd](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/1ed4a9c3-771f-4aa1-a90e-240cb3f08fc6)
+  ![crowdSimulator](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/1ed4a9c3-771f-4aa1-a90e-240cb3f08fc6)
 
   ![photo_2024-04-04_21-31-06](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/3bdc79fd-024f-4e0f-8d24-3e4a9f4c542e)
 
