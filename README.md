@@ -273,6 +273,111 @@ Simplified Unit Test:
 
 ![work36_h](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/482cbb79-5323-4718-a33f-a163a2408a16)
 
+```
+.
+├── src/
+│       ├── main.cpp
+│       └── main/
+│               ├── glWindow/
+│               │      ├── glCamera.cpp
+│               │      └── glInput.cpp
+│               │
+│               ├── glWindow_Scenes/
+│               │      ├── base/
+│               │      │     └── glDraw.cpp
+│               │      ├── glScene_Dynamic/
+│               │      │     └── glScene_Dynamic_Driver.cpp
+│               │      └── glScene_Dynamic.cpp
+│               │
+│               ├── parser/
+│               │      ├── base/
+│               │      │     ├── StringMathParser/
+│               │      │     │       └── StringMathTokenizer.cpp
+│               │      │     ├── StringCommandParser.cpp
+│               │      │     └── StringMathParser.cpp
+│               │      │
+│               │      ├── parser_Command/
+│               │      │     ├── command_Line.cpp
+│               │      │     ├── command_Load.cpp
+│               │      │     ├── command_Point.cpp
+│               │      │     ├── command_Remove.cpp
+│               │      │     ├── command_Square.cpp
+│               │      │     ├── command_Switch_Math.cpp
+│               │      │     ├── command_Text.cpp
+│               │      │     └── command_Texture.cpp
+│               │      │     
+│               │      ├── parser_Common/
+│               │      │     ├── command_Exit.cpp
+│               │      │     └── command_Help.cpp
+│               │      │
+│               │      ├── parser_Math/
+│               │      │     ├── parser_Clear.cpp
+│               │      │     ├── parser_Graph.cpp
+│               │      │     └── parser_Switch_Command.cpp
+│               │      │
+│               │      ├── parser_Command.cpp
+│               │      └── parser_Math.cpp
+│               │
+│               ├── glWindow.cpp
+│               └── parser.cpp
+│
+└── include/
+│         └── main/
+│               ├── glWindow/
+│               │      ├── glCamera.h
+│               │      └── glInput.h
+│               │
+│               ├── glWindow_Scenes/
+│               │      ├── base/
+│               │      │     ├── glDraw/
+│               │      │     │      └── stb_image.h
+│               │      │     ├── glDraw.h
+│               │      │     └── glDraw_Base.h
+│               │      ├── glScene_Dynamic/
+│               │      │     └── glScene_Dynamic_Driver.h
+│               │      └── glScene_Dynamic.h
+│               │
+│               ├── parser/
+│               │      ├── base/
+│               │      │     ├── StringMathParser/
+│               │      │     │       └── StringMathTokenizer.h
+│               │      │     ├── Parser_Base.h
+│               │      │     ├── StringCommandParser.h
+│               │      │     └── StringMathParser.h
+│               │      │
+│               │      ├── parser_Command/
+│               │      │     ├── command_Line.h
+│               │      │     ├── command_Load.h
+│               │      │     ├── command_Point.h
+│               │      │     ├── command_Remove.h
+│               │      │     ├── command_Square.h
+│               │      │     ├── command_Switch_Math.h
+│               │      │     ├── command_Text.h
+│               │      │     └── command_Texture.h
+│               │      │     
+│               │      ├── parser_Common/
+│               │      │     ├── command_Exit.h
+│               │      │     └── command_Help.h
+│               │      │
+│               │      ├── parser_Math/
+│               │      │     ├── parser_Clear.h
+│               │      │     ├── parser_Graph.h
+│               │      │     └── parser_Switch_Command.h
+│               │      │
+│               │      ├── parser_Command.h
+│               │      └── parser_Math.h
+│               │
+│               ├── glWindow.h
+│               └── parser.h
+│
+└── GLOBAL/ <------------------------------------------------ Configuration
+    │
+    ├── CMD.h
+    ├── Project.h
+    └── Struct.h
+
+```
+
 Simplified Unit Test:
 
 ```
