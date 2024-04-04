@@ -25,6 +25,8 @@
 
 ![neural](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/0f2c472c-2453-43ae-8f2b-82e51f188e38)
 
+![efesafsef](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/4f7857d3-a19f-46ef-a1ec-81852f071c58)
+
 ```
 .
 │
