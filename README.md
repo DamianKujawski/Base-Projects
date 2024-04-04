@@ -283,16 +283,47 @@ DSharp_Interop/
 
 SmartHome_Editor/
     ├── dependencies/
-    │           └── DSharp_Camera.cs
+    │        └── DSharp_Camera.cs
     │
-    ├──  DxGraphics-Base
-                ├── DxModel2D5/
-                │      └── DxModel_Struct.cs
-                ├── DxTexture3D/
-                │      └── DxBitmap.cs
-                ├── DxLight.cs
-                ├── DxModel2D5.cs
-                └── DxTexture3D.cs
+    ├──  DxGraphics-Base/
+    │        ├── DxModel2D5/
+    │        │      └── DxModel_Struct.cs
+    │        ├── DxTexture3D/
+    │        │      └── DxBitmap.cs
+    │        ├── DxLight.cs
+    │        ├── DxModel2D5.cs
+    │        └── DxTexture3D.cs
+    │
+    ├──  GLOBAL/
+    │        ├── AssemblyAuthorAttribute.cs
+    │        └── Config.cs
+    │
+    ├──  MainWindow/
+    │        ├── DxModel2D5/
+    │        │      └── DxModel_Struct.cs
+    │
+    ├──  RESOURCES/
+    │        ├── Controls/
+    │        │      ├── Control_Menu_NetworkSettings.xaml
+    │        │      └── Control_Menu_SensorsSettings.xaml
+    │        ├── Styles/
+    │        │      ├── Styles_Button.xaml
+    │        │      ├── Styles_CheckBox.xaml
+    │        │      ├── Styles_ContextMenu.xaml
+    │        │      ├── Styles_MenuItem.xaml
+    │        │      ├── Styles_PasswordBox.xaml
+    │        │      ├── Styles_ScrollBar.xaml
+    │        │      ├── Styles_TabItem.xaml
+    │        │      ├── Styles_TextBox.xaml
+    │        │      ├── Styles_Thumb.xaml
+    │        │      └── Styles_Tooltip.xaml
+    │        ├── Controls.xaml
+    │        └── Styles.xaml
+    │
+    ├── App.xaml
+    ├── AssemblyInfo.cs
+    ├── MainWindow.xaml
+    └── Resources.xaml
 
 ```
 
