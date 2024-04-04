@@ -275,38 +275,80 @@ Simplified Unit Test:
 
 ```
 DSharp_Interop/
+    │
     ├── DSharp_Interop.cs
     └── DSharp_InteropLibrary/
+                │ 
                 ├── DSharp_Camera.cs
                 ├── DSharp_Size.cs
                 └── IDxWindow.cs
 
 SmartHome_Editor/
+    │ 
     ├── dependencies/
     │        └── DSharp_Camera.cs
     │
     ├──  DxGraphics-Base/
+    │        │ 
     │        ├── DxModel2D5/
     │        │      └── DxModel_Struct.cs
+    │        │    
     │        ├── DxTexture3D/
     │        │      └── DxBitmap.cs
+    │        │    
     │        ├── DxLight.cs
     │        ├── DxModel2D5.cs
     │        └── DxTexture3D.cs
     │
     ├──  GLOBAL/
+    │        │  
     │        ├── AssemblyAuthorAttribute.cs
     │        └── Config.cs
     │
     ├──  MainWindow/
-    │        ├── DxModel2D5/
-    │        │      └── DxModel_Struct.cs
+    │        │
+    │        ├── DxWindow_ScenesController/
+    │        │      │  
+    │        │      ├── Scene_25D/
+    │        │      │      │
+    │        │      │      ├── DxLightShader/
+    │        │      │      │      ├── DxShader_ExeDefinitions.cs
+    │        │      │      │      └── DxShader_Struct.cs
+    │        │      │      │
+    │        │      │      ├── DxWindow_Overlay2D-Base/
+    │        │      │      │      ├── IOverlay_2D.cs
+    │        │      │      │      └── Overlay_2D_Base.cs
+    │        │      │      │
+    │        │      │      ├── IsometricMath/
+    │        │      │      │      └── IsometricMath_Struct.cs
+    │        │      │      │
+    │        │      │      ├── DxCamera.cs
+    │        │      │      ├── DxLightShader.cs
+    │        │      │      ├── DxWindow_Overlay2D.cs
+    │        │      │      └── IsometricMath.cs
+    │        │      │
+    │        │      ├── Scene_25D-Base/
+    │        │      │      ├── IScene_25D.cs
+    │        │      │      ├── Scene_25D_Base.cs
+    │        │      │      ├── Scene_25D_Enum.cs
+    │        │      │      └── Scene_25D_Struct.cs
+    │        │      │  
+    │        │      └── Scene_25D_MapEditor.cs
+    │        │
+    │        ├── HID_Mouse/
+    │        │      └── HID_Mouse_Struct.cs
+    │        │
+    │        ├── DxWindow_ScenesController.cs
+    │        └── HID_Mouse.cs
     │
     ├──  RESOURCES/
     │        ├── Controls/
+    │        │      │ 
     │        │      ├── Control_Menu_NetworkSettings.xaml
     │        │      └── Control_Menu_SensorsSettings.xaml
+    │        │      
     │        ├── Styles/
+    │        │      │
     │        │      ├── Styles_Button.xaml
     │        │      ├── Styles_CheckBox.xaml
     │        │      ├── Styles_ContextMenu.xaml
@@ -317,6 +359,7 @@ SmartHome_Editor/
     │        │      ├── Styles_TextBox.xaml
     │        │      ├── Styles_Thumb.xaml
     │        │      └── Styles_Tooltip.xaml
+    │        │
     │        ├── Controls.xaml
     │        └── Styles.xaml
     │
