@@ -421,7 +421,7 @@ Simplified Unit Test:
 
   PLC Unit Emulator.
 
-  ![plc_cpu](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/fc874959-22e4-4caa-8ac7-df0d53d39bdb)
+  ![espasplc](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/b9c0e678-ed16-4226-83dc-dbab497bb4ec)
 
 ```
 .
