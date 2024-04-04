@@ -524,6 +524,8 @@ delete _mcuSimulation;
        
   ![crowd](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/1ed4a9c3-771f-4aa1-a90e-240cb3f08fc6)
 
+  ![photo_2024-04-04_21-31-06](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/3bdc79fd-024f-4e0f-8d24-3e4a9f4c542e)
+
 ```
 .
 ├── src/
