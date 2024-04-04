@@ -422,6 +422,9 @@ Simplified Unit Test:
 
   ![cpu](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/7ea878ac-2292-4df3-9151-aa3d039e805e)
 
+  ![plc_cpu](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/1ad991df-044f-410c-a099-4cc1d70210ec)
+
+
 ```
 .
 │
