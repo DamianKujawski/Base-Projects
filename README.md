@@ -29,11 +29,15 @@
 .
 │
 ├── include/
+|      |
 │      └── main-NeuralNetwork/
+|            |
 │            ├── NeuralNetwork_Builder.h
 │            └── NeuralNetwork_Builder/
+|                  |
 │                  ├── NeuralNetwork_FeedForward.h
 │                  └── NeuralNetwork_FeedForward/
+|                        |
 │                        ├── NeuralNetwork/
 │                        ├── NeuralNetwork_ActivationFunction.h
 │                        ├── NeuralNetwork_FeedForwardCalculator.h
@@ -41,17 +45,23 @@
 │                        └── NeuralNetwork_WeightInitializer.h
 │            
 ├── scr/
+|      |
 │      └── main-NeuralNetwork/
+|            |
 │            ├── NeuralNetwork_Builder.cpp
 │            └── NeuralNetwork_Builder/
-│                  ├── NeuralNetwork_FeedForward.cpp
-│                  └── NeuralNetwork_FeedForward/
-│                        └── NeuralNetwork/
-│                                ├── NeuralNetwork_FeedForwardCalculator.cpp
-│                                ├── NeuralNetwork_LayerErrors.cpp
-│                                └── NeuralNetwork_WeightInitializer.cpp
+│                    |
+│                    ├── NeuralNetwork_FeedForward.cpp
+│                    └── NeuralNetwork_FeedForward/
+│                            |
+│                            └── NeuralNetwork/
+│                                    |
+│                                    ├── NeuralNetwork_FeedForwardCalculator.cpp
+│                                    ├── NeuralNetwork_LayerErrors.cpp
+│                                    └── NeuralNetwork_WeightInitializer.cpp
 │
 └── GLOBAL/  <------------------------------------------------ Configuration
+      |
       ├── Define.h
       ├── Project.h
       └── Struct.h
@@ -60,11 +70,14 @@
 .
 │
 └── UnitTest/
+      |
       ├── src/
+      │     |
       │     ├── UnitTest.cpp
       │     └── pch.cpp (Microsoft::VisualStudio::CppUnitTestFramework)
       │
-      └── include/
+      └── include
+            |
             ├── NeuralNetwork_Builder.h
             ├── Opcode.h
             └── Struct.h
@@ -161,27 +174,36 @@ delete _neuralNetwork;
 ```
 .
 ├── src/
+|       |
 │       ├── main.cpp
 │       └── main/
+|               |
 │               ├── glWindow/
+│               │      │   
 │               │      ├── glCamera.cpp
 │               │      └── glInput.cpp
 │               │
 │               ├── glWindow_Scenes/
+│               │      │ 
 │               │      ├── base/
 │               │      │     └── glDraw.cpp
+│               │      │     
 │               │      ├── glScene_Dynamic/
 │               │      │     └── glScene_Dynamic_Driver.cpp
+│               │      │     
 │               │      └── glScene_Dynamic.cpp
 │               │
 │               ├── parser/
 │               │      ├── base/
+│               │      │     │
 │               │      │     ├── StringMathParser/
 │               │      │     │       └── StringMathTokenizer.cpp
+│               │      │     │
 │               │      │     ├── StringCommandParser.cpp
 │               │      │     └── StringMathParser.cpp
 │               │      │
 │               │      ├── parser_Command/
+│               │      │     │
 │               │      │     ├── command_Line.cpp
 │               │      │     ├── command_Load.cpp
 │               │      │     ├── command_Point.cpp
@@ -192,10 +214,12 @@ delete _neuralNetwork;
 │               │      │     └── command_Texture.cpp
 │               │      │     
 │               │      ├── parser_Common/
+│               │      │     │
 │               │      │     ├── command_Exit.cpp
 │               │      │     └── command_Help.cpp
 │               │      │
 │               │      ├── parser_Math/
+│               │      │     │
 │               │      │     ├── parser_Clear.cpp
 │               │      │     ├── parser_Graph.cpp
 │               │      │     └── parser_Switch_Command.cpp
@@ -208,29 +232,39 @@ delete _neuralNetwork;
 │
 └── include/
 │         └── main/
+|               |
 │               ├── glWindow/
+│               │      │  
 │               │      ├── glCamera.h
 │               │      └── glInput.h
 │               │
 │               ├── glWindow_Scenes/
+│               │      │   
 │               │      ├── base/
+│               │      │     │
 │               │      │     ├── glDraw/
 │               │      │     │      └── stb_image.h
+│               │      │     │
 │               │      │     ├── glDraw.h
 │               │      │     └── glDraw_Base.h
+│               │      │  
 │               │      ├── glScene_Dynamic/
 │               │      │     └── glScene_Dynamic_Driver.h
+│               │      │   
 │               │      └── glScene_Dynamic.h
 │               │
 │               ├── parser/
+│               │      │ 
 │               │      ├── base/
 │               │      │     ├── StringMathParser/
 │               │      │     │       └── StringMathTokenizer.h
+│               │      │     │
 │               │      │     ├── Parser_Base.h
 │               │      │     ├── StringCommandParser.h
 │               │      │     └── StringMathParser.h
 │               │      │
 │               │      ├── parser_Command/
+│               │      │     │
 │               │      │     ├── command_Line.h
 │               │      │     ├── command_Load.h
 │               │      │     ├── command_Point.h
@@ -241,10 +275,12 @@ delete _neuralNetwork;
 │               │      │     └── command_Texture.h
 │               │      │     
 │               │      ├── parser_Common/
+│               │      │     │
 │               │      │     ├── command_Exit.h
 │               │      │     └── command_Help.h
 │               │      │
 │               │      ├── parser_Math/
+│               │      │     │
 │               │      │     ├── parser_Clear.h
 │               │      │     ├── parser_Graph.h
 │               │      │     └── parser_Switch_Command.h
@@ -312,10 +348,12 @@ SmartHome_Editor/
     │        │      ├── Scene_25D/
     │        │      │      │
     │        │      │      ├── DxLightShader/
+    │        │      │      │      |
     │        │      │      │      ├── DxShader_ExeDefinitions.cs
     │        │      │      │      └── DxShader_Struct.cs
     │        │      │      │
     │        │      │      ├── DxWindow_Overlay2D-Base/
+    │        │      │      │      |
     │        │      │      │      ├── IOverlay_2D.cs
     │        │      │      │      └── Overlay_2D_Base.cs
     │        │      │      │
@@ -328,6 +366,7 @@ SmartHome_Editor/
     │        │      │      └── IsometricMath.cs
     │        │      │
     │        │      ├── Scene_25D-Base/
+    │        │      │      │   
     │        │      │      ├── IScene_25D.cs
     │        │      │      ├── Scene_25D_Base.cs
     │        │      │      ├── Scene_25D_Enum.cs
@@ -342,6 +381,7 @@ SmartHome_Editor/
     │        └── HID_Mouse.cs
     │
     ├──  RESOURCES/
+    │        │
     │        ├── Controls/
     │        │      │ 
     │        │      ├── Control_Menu_NetworkSettings.xaml
@@ -386,19 +426,23 @@ Simplified Unit Test:
 .
 │
 ├── src/
+│   │
 │   ├── main.c
 │   ├── MCU.c
 │   └── MCU/
+│         │
 │         └── Instructions.c
 │
 └── include/
       │
       ├── MCU/
+      │     │
       │     ├── Instructions.h
       │     └── Instructions
       │            └── Opcode.h
       │
       └── GLOBAL/ <------------------------------------------------ Configuration
+            │
             ├── Types.h
             └── Project.h
 
@@ -406,10 +450,12 @@ Simplified Unit Test:
 │
 └── UnitTest/
       ├── src/
+      │     │
       │     ├── UnitTest.cpp
       │     └── pch.cpp (Microsoft::VisualStudio::CppUnitTestFramework)
       │
       └── include/
+            │
             ├── MCU.h
             ├── Opcode.h
             └── pch.h
@@ -478,27 +524,35 @@ delete _mcuSimulation;
 ```
 .
 ├── src/
+│   │
 │   └── main.cpp
+│         │
 │         ├── Scene2D.cpp
 │         └── Scene2D
+│               │
 │               ├── Drawing2D.cpp
 │               └── DynamicObject2D
+│                      │
 │                      ├── DynamicObject2D_Fast.h
 │                      └── Base
+│                            │
 │                            ├── DynamicObject2D.cpp
 │                            └── Random.h
 │
 └── include/
     │
     ├── main
-    │   ├── Scene2D.h
-    │   └── Scene2D
-    │        ├── Drawing2D.h
-    │        └── DynamicObject2D
-    │              ├── DynamicObject2D_Fast.h
-    │              └── Base
-    │                    ├── DynamicObject2D.cpp
-    │                    └── Random.h
+    │     │
+    │     ├── Scene2D.h
+    │     └── Scene2D
+    │            │
+    │            ├── Drawing2D.h
+    │            └── DynamicObject2D
+    │                  │
+    │                  ├── DynamicObject2D_Fast.h
+    │                  └── Base
+    │                        ├── DynamicObject2D.cpp
+    │                        └── Random.h
     │
     └── GLOBAL/ <------------------------------------------------ Configuration
           │
