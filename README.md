@@ -314,6 +314,8 @@ Simplified Unit Test:
 
 ![dada](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/f654f493-34bf-43a8-9b7a-90110b2c1cc9)
 
+![smartEditor](https://damiankjkujawski.github.io/about-me/media/work36_h.mp4)
+
 ```
 DSharp_Interop/
     │
