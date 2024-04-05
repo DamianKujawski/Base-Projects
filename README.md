@@ -169,9 +169,7 @@ delete _neuralNetwork;
 
 ## OpenGlParser
 
-![work37_h](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/aa6373b9-2d88-4eaa-9f70-a69d22be5ef6)
-
-![OpenGlEditor](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/4f7857d3-a19f-46ef-a1ec-81852f071c58)
+![OpenGlParser](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/d0922a4b-0dfc-4e24-85c0-679c9a000489)
 
 ```
 .
