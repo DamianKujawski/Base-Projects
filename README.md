@@ -520,7 +520,7 @@ delete _mcuSimulation;
 
   Crowd Simulating Project. Mainly designed for optimization. The main premise in developing this project is for the object not to plan steps ahead.
        
-  ![CrowdSimulation](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/8cf74f28-2b39-42f0-8c47-c8640b122963)
+  ![CrowdSimulation](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/7f246edd-b738-45b8-8861-090da234c10f)
 
 ```
 .
