@@ -308,11 +308,7 @@ Simplified Unit Test:
 
 ## SmartHome_Editor
 
-![work36_h](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/482cbb79-5323-4718-a33f-a163a2408a16) 
-
-![SmartHomeEditor](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/f654f493-34bf-43a8-9b7a-90110b2c1cc9)
-
-
+![SmartHome_Editor](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/34271491-5f07-4c16-9963-a1e73bfd446b)
 
 ```
 DSharp_Interop/
