@@ -5,7 +5,7 @@
 
   Small, base projects, which were used as implementations for larger projects in the future. 
 
-  [Uploading BaseProjects-DamianKujawski_LowQ.MP4…](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/08ca5b77-bf5a-4aa6-9465-b682acdc85c0)
+  [BaseProjects-DamianKujawski](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/08ca5b77-bf5a-4aa6-9465-b682acdc85c0)
 
 ## Content
 
