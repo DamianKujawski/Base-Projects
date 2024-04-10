@@ -40,9 +40,10 @@ D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\SmartHome_Editor\o
 D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\SmartHome_Editor\obj\Debug\net7.0-windows\SmartHome_Editor.g.resources
 D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\SmartHome_Editor\obj\Debug\net7.0-windows\SmartHome_Editor.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\SmartHome_Editor\obj\Debug\net7.0-windows\SmartHome_Editor.csproj.CoreCompileInputs.cache
-D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\SmartHome_Editor\obj\Debug\net7.0-windows\SmartHome_Editor.csproj.CopyComplete
 D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\SmartHome_Editor\obj\Debug\net7.0-windows\SmartHome_Editor.dll
 D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\SmartHome_Editor\obj\Debug\net7.0-windows\refint\SmartHome_Editor.dll
 D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\SmartHome_Editor\obj\Debug\net7.0-windows\SmartHome_Editor.pdb
 D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\SmartHome_Editor\obj\Debug\net7.0-windows\SmartHome_Editor.genruntimeconfig.cache
 D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\SmartHome_Editor\obj\Debug\net7.0-windows\ref\SmartHome_Editor.dll
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\SmartHome_Editor\obj\Debug\net7.0-windows\SmartHome_Editor.sourcelink.json
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\SmartHome_Editor\obj\Debug\net7.0-windows\SmartHom.48B005F4.Up2Date

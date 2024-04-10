@@ -10,3 +10,4 @@ D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibr
 D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\obj\Debug\net7.0-windows\refint\DSharp_Interop.dll
 D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\obj\Debug\net7.0-windows\DSharp_Interop.pdb
 D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\obj\Debug\net7.0-windows\ref\DSharp_Interop.dll
+D:\Projekty\BaseProjects\BaseProjects\SmartHome_Editor-CSharp\DSharp_InteropLibrary\obj\Debug\net7.0-windows\DSharp_Interop.sourcelink.json

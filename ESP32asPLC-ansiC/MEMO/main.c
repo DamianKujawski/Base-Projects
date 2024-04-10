@@ -10,10 +10,10 @@ int main()
 {
     unsigned char _romProgram[] =
     {
-        SET, 3,
+        SET, 4,
         ST, 0,
         ADD, 0,
-        ST, 1
+        SUB, 1,
     };
 
     unsigned char _ramData[256] = { 0 };

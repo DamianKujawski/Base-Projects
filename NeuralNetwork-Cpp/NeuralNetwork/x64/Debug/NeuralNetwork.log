@@ -1,5 +1,2 @@
-﻿  NeuralNetwork_FeedForwardCalculator.cpp
-  NeuralNetwork_WeightInitializer.cpp
-  main.cpp
-  Generowanie kodu...
-  NeuralNetwork.vcxproj -> C:\Users\damia\Desktop\NeuralNetwork\x64\Debug\NeuralNetwork.exe
+﻿  main.cpp
+  NeuralNetwork.vcxproj -> D:\Projekty\BaseProjects\BaseProjects\NeuralNetwork-Cpp\x64\Debug\NeuralNetwork.exe
