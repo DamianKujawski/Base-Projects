@@ -174,6 +174,8 @@ delete _neuralNetwork;
 
 ## OpenGlParser
 
+Text Command Parser and OpenGL Renderer.
+
 ![OpenGlParser](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/d0922a4b-0dfc-4e24-85c0-679c9a000489)
 
 Project tree:
@@ -315,6 +317,8 @@ Simplified Unit Test:
 
 ## SmartHome_Editor
 
+Editor designed for editing Smart Home environment settings.
+
 ![SmartHome_Editor](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/34271491-5f07-4c16-9963-a1e73bfd446b)
 
 Project tree:
@@ -428,11 +432,11 @@ Simplified Unit Test:
 
 ## ESP32asPLC
 
-  PLC Unit Emulator.
+PLC Unit Emulator.
 
-  ![ESP32asPLC](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/7a0f1b09-13c1-4e79-80ee-067c195ef684)
+![ESP32asPLC](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/7a0f1b09-13c1-4e79-80ee-067c195ef684)
 
-  Project tree:
+Project tree:
 
 ```
 .
@@ -529,11 +533,11 @@ delete _mcuSimulation;
 
 ## CrowdSimulation
 
-  Crowd Simulating Project. Mainly designed for optimization. The main premise in developing this project is for the object not to plan steps ahead.
+Crowd Simulating Project. Mainly designed for optimization. The main premise in developing this project is for the object not to plan steps ahead.
        
-  ![CrowdSimulation](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/cdd85273-41ad-454e-b53f-c3eed58a9e89)
+![CrowdSimulation](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/cdd85273-41ad-454e-b53f-c3eed58a9e89)
 
-  Project tree:
+Project tree:
 
 ```
 .
