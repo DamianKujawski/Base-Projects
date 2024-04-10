@@ -13,104 +13,13 @@
 ## Introduction
 
   Projects included in the repository: 
-  - [ESP32asPLC](#ESP32asPLC)
   - [NeuralNetwork](#NeuralNetwork)
   - [OpenGlParser](#OpenGlParser)
   - [SmartHome_Editor](#SmartHome_Editor)
+  - [ESP32asPLC](#ESP32asPLC)
   - [CrowdSimulation](#CrowdSimulation)
 
-## ESP32asPLC
 
-  PLC Unit Emulator.
-
-  ![cpu](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/7ea878ac-2292-4df3-9151-aa3d039e805e)
-
-```
-.
-│
-├── src/
-│   ├── main.c
-│   ├── MCU.c
-│   └── MCU/
-│         └── Instructions.c
-│
-└── include/
-      │
-      ├── MCU/
-      │     ├── Instructions.h
-      │     └── Instructions
-      │            └── Opcode.h
-      │
-      └── GLOBAL/ <------------------------------------------------ Configuration
-            ├── Types.h
-            └── Project.h
-
-.
-│
-└── UnitTest/
-      ├── src/
-      │     ├── UnitTest.cpp
-      │     └── pch.cpp (Microsoft::VisualStudio::CppUnitTestFramework)
-      │
-      └── include/
-            ├── MCU.h
-            ├── Opcode.h
-            └── pch.h
-```
-
-Simplified Unit Test:
-
-```
-unsigned char _romProgram[] =
-{
-    SET, 3,
-    ST, 0,
-    ADD, 0,
-    ST, 1
-};
-
-// Define the RAM data
-unsigned char _ramData[256] = { 0 };
-
-// Create MCU simulation:
-MCU_t* _mcuSimulation = new MCU_t(); // Dynamically allocate memory for MCU_t object
-
-// Initialize ROM and RAM data - Conversion from:
-/*
-    MCU_t* _mcuSimulation = MCU
-    (
-        &(MEM_t) { (unsigned char*)_romProgram, sizeof(_romProgram) },
-        & (MEM_t) { _ramData, sizeof(_ramData) }
-    );
-*/
-
-_mcuSimulation->rom.data = new unsigned char[sizeof(_romProgram)];
-memcpy(_mcuSimulation->rom.data, _romProgram, sizeof(_romProgram));
-_mcuSimulation->rom.size = sizeof(_romProgram);
-
-_mcuSimulation->ram.data = new unsigned char[sizeof(_ramData)];
-memcpy(_mcuSimulation->ram.data, _ramData, sizeof(_ramData));
-_mcuSimulation->ram.size = sizeof(_ramData);
-
-// Run the simulation
-_mcuSimulation->Run();
-
-// Verify the result
-Logger::WriteMessage("RAM map:\n");
-for (int i = 0; i < sizeof(_ramData); i++) 
-{
-    Logger::WriteMessage(std::to_string(_ramData[i]).c_str());
-    Logger::WriteMessage(" ");
-}
-
-Assert::AreEqual(static_cast<unsigned char>(6), _ramData[1], L"Value at RAM ADDR = 1 should be 6");
-
-// Free memory
-delete[] _mcuSimulation->rom.data;
-delete[] _mcuSimulation->ram.data;
-delete _mcuSimulation;
-
-```
 
 ## NeuralNetwork
 
@@ -120,11 +29,15 @@ delete _mcuSimulation;
 .
 │
 ├── include/
+|      |
 │      └── main-NeuralNetwork/
+|            |
 │            ├── NeuralNetwork_Builder.h
 │            └── NeuralNetwork_Builder/
+|                  |
 │                  ├── NeuralNetwork_FeedForward.h
 │                  └── NeuralNetwork_FeedForward/
+|                        |
 │                        ├── NeuralNetwork/
 │                        ├── NeuralNetwork_ActivationFunction.h
 │                        ├── NeuralNetwork_FeedForwardCalculator.h
@@ -132,17 +45,23 @@ delete _mcuSimulation;
 │                        └── NeuralNetwork_WeightInitializer.h
 │            
 ├── scr/
+|      |
 │      └── main-NeuralNetwork/
+|            |
 │            ├── NeuralNetwork_Builder.cpp
 │            └── NeuralNetwork_Builder/
-│                  ├── NeuralNetwork_FeedForward.cpp
-│                  └── NeuralNetwork_FeedForward/
-│                        └── NeuralNetwork/
-│                                ├── NeuralNetwork_FeedForwardCalculator.cpp
-│                                ├── NeuralNetwork_LayerErrors.cpp
-│                                └── NeuralNetwork_WeightInitializer.cpp
+│                    |
+│                    ├── NeuralNetwork_FeedForward.cpp
+│                    └── NeuralNetwork_FeedForward/
+│                            |
+│                            └── NeuralNetwork/
+│                                    |
+│                                    ├── NeuralNetwork_FeedForwardCalculator.cpp
+│                                    ├── NeuralNetwork_LayerErrors.cpp
+│                                    └── NeuralNetwork_WeightInitializer.cpp
 │
 └── GLOBAL/  <------------------------------------------------ Configuration
+      |
       ├── Define.h
       ├── Project.h
       └── Struct.h
@@ -151,11 +70,14 @@ delete _mcuSimulation;
 .
 │
 └── UnitTest/
+      |
       ├── src/
+      │     |
       │     ├── UnitTest.cpp
       │     └── pch.cpp (Microsoft::VisualStudio::CppUnitTestFramework)
       │
-      └── include/
+      └── include
+            |
             ├── NeuralNetwork_Builder.h
             ├── Opcode.h
             └── Struct.h
@@ -247,7 +169,136 @@ delete _neuralNetwork;
 
 ## OpenGlParser
 
-![work37_h](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/aa6373b9-2d88-4eaa-9f70-a69d22be5ef6)
+![OpenGlParser](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/d0922a4b-0dfc-4e24-85c0-679c9a000489)
+
+```
+.
+├── src/
+|       |
+│       ├── main.cpp
+│       └── main/
+|               |
+│               ├── glWindow/
+│               │      │   
+│               │      ├── glCamera.cpp
+│               │      └── glInput.cpp
+│               │
+│               ├── glWindow_Scenes/
+│               │      │ 
+│               │      ├── base/
+│               │      │     └── glDraw.cpp
+│               │      │     
+│               │      ├── glScene_Dynamic/
+│               │      │     └── glScene_Dynamic_Driver.cpp
+│               │      │     
+│               │      └── glScene_Dynamic.cpp
+│               │
+│               ├── parser/
+│               │      │ 
+│               │      ├── base/
+│               │      │     │
+│               │      │     ├── StringMathParser/
+│               │      │     │       └── StringMathTokenizer.cpp
+│               │      │     │
+│               │      │     ├── StringCommandParser.cpp
+│               │      │     └── StringMathParser.cpp
+│               │      │
+│               │      ├── parser_Command/
+│               │      │     │
+│               │      │     ├── command_Line.cpp
+│               │      │     ├── command_Load.cpp
+│               │      │     ├── command_Point.cpp
+│               │      │     ├── command_Remove.cpp
+│               │      │     ├── command_Square.cpp
+│               │      │     ├── command_Switch_Math.cpp
+│               │      │     ├── command_Text.cpp
+│               │      │     └── command_Texture.cpp
+│               │      │     
+│               │      ├── parser_Common/
+│               │      │     │
+│               │      │     ├── command_Exit.cpp
+│               │      │     └── command_Help.cpp
+│               │      │
+│               │      ├── parser_Math/
+│               │      │     │
+│               │      │     ├── parser_Clear.cpp
+│               │      │     ├── parser_Graph.cpp
+│               │      │     └── parser_Switch_Command.cpp
+│               │      │
+│               │      ├── parser_Command.cpp
+│               │      └── parser_Math.cpp
+│               │
+│               ├── glWindow.cpp
+│               └── parser.cpp
+│
+└── include/
+│         └── main/
+|               |
+│               ├── glWindow/
+│               │      │  
+│               │      ├── glCamera.h
+│               │      └── glInput.h
+│               │
+│               ├── glWindow_Scenes/
+│               │      │   
+│               │      ├── base/
+│               │      │     │
+│               │      │     ├── glDraw/
+│               │      │     │      └── stb_image.h
+│               │      │     │
+│               │      │     ├── glDraw.h
+│               │      │     └── glDraw_Base.h
+│               │      │  
+│               │      ├── glScene_Dynamic/
+│               │      │     └── glScene_Dynamic_Driver.h
+│               │      │   
+│               │      └── glScene_Dynamic.h
+│               │
+│               ├── parser/
+│               │      │ 
+│               │      ├── base/
+│               │      │     ├── StringMathParser/
+│               │      │     │       └── StringMathTokenizer.h
+│               │      │     │
+│               │      │     ├── Parser_Base.h
+│               │      │     ├── StringCommandParser.h
+│               │      │     └── StringMathParser.h
+│               │      │
+│               │      ├── parser_Command/
+│               │      │     │
+│               │      │     ├── command_Line.h
+│               │      │     ├── command_Load.h
+│               │      │     ├── command_Point.h
+│               │      │     ├── command_Remove.h
+│               │      │     ├── command_Square.h
+│               │      │     ├── command_Switch_Math.h
+│               │      │     ├── command_Text.h
+│               │      │     └── command_Texture.h
+│               │      │     
+│               │      ├── parser_Common/
+│               │      │     │
+│               │      │     ├── command_Exit.h
+│               │      │     └── command_Help.h
+│               │      │
+│               │      ├── parser_Math/
+│               │      │     │
+│               │      │     ├── parser_Clear.h
+│               │      │     ├── parser_Graph.h
+│               │      │     └── parser_Switch_Command.h
+│               │      │
+│               │      ├── parser_Command.h
+│               │      └── parser_Math.h
+│               │
+│               ├── glWindow.h
+│               └── parser.h
+│
+└── GLOBAL/ <------------------------------------------------ Configuration
+    │
+    ├── CMD.h
+    ├── Project.h
+    └── Struct.h
+
+```
 
 Simplified Unit Test:
 
@@ -257,7 +308,108 @@ Simplified Unit Test:
 
 ## SmartHome_Editor
 
-![work36_h](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/482cbb79-5323-4718-a33f-a163a2408a16)
+![SmartHome_Editor](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/34271491-5f07-4c16-9963-a1e73bfd446b)
+
+```
+DSharp_Interop/
+    │
+    ├── DSharp_Interop.cs
+    └── DSharp_InteropLibrary/
+                │ 
+                ├── DSharp_Camera.cs
+                ├── DSharp_Size.cs
+                └── IDxWindow.cs
+
+SmartHome_Editor/
+    │ 
+    ├── dependencies/
+    │        └── DSharp_Camera.cs
+    │
+    ├──  DxGraphics-Base/
+    │        │ 
+    │        ├── DxModel2D5/
+    │        │      └── DxModel_Struct.cs
+    │        │    
+    │        ├── DxTexture3D/
+    │        │      └── DxBitmap.cs
+    │        │    
+    │        ├── DxLight.cs
+    │        ├── DxModel2D5.cs
+    │        └── DxTexture3D.cs
+    │
+    ├──  GLOBAL/
+    │        │  
+    │        ├── AssemblyAuthorAttribute.cs
+    │        └── Config.cs
+    │
+    ├──  MainWindow/
+    │        │
+    │        ├── DxWindow_ScenesController/
+    │        │      │  
+    │        │      ├── Scene_25D/
+    │        │      │      │
+    │        │      │      ├── DxLightShader/
+    │        │      │      │      |
+    │        │      │      │      ├── DxShader_ExeDefinitions.cs
+    │        │      │      │      └── DxShader_Struct.cs
+    │        │      │      │
+    │        │      │      ├── DxWindow_Overlay2D-Base/
+    │        │      │      │      |
+    │        │      │      │      ├── IOverlay_2D.cs
+    │        │      │      │      └── Overlay_2D_Base.cs
+    │        │      │      │
+    │        │      │      ├── IsometricMath/
+    │        │      │      │      └── IsometricMath_Struct.cs
+    │        │      │      │
+    │        │      │      ├── DxCamera.cs
+    │        │      │      ├── DxLightShader.cs
+    │        │      │      ├── DxWindow_Overlay2D.cs
+    │        │      │      └── IsometricMath.cs
+    │        │      │
+    │        │      ├── Scene_25D-Base/
+    │        │      │      │   
+    │        │      │      ├── IScene_25D.cs
+    │        │      │      ├── Scene_25D_Base.cs
+    │        │      │      ├── Scene_25D_Enum.cs
+    │        │      │      └── Scene_25D_Struct.cs
+    │        │      │  
+    │        │      └── Scene_25D_MapEditor.cs
+    │        │
+    │        ├── HID_Mouse/
+    │        │      └── HID_Mouse_Struct.cs
+    │        │
+    │        ├── DxWindow_ScenesController.cs
+    │        └── HID_Mouse.cs
+    │
+    ├──  RESOURCES/
+    │        │
+    │        ├── Controls/
+    │        │      │ 
+    │        │      ├── Control_Menu_NetworkSettings.xaml
+    │        │      └── Control_Menu_SensorsSettings.xaml
+    │        │      
+    │        ├── Styles/
+    │        │      │
+    │        │      ├── Styles_Button.xaml
+    │        │      ├── Styles_CheckBox.xaml
+    │        │      ├── Styles_ContextMenu.xaml
+    │        │      ├── Styles_MenuItem.xaml
+    │        │      ├── Styles_PasswordBox.xaml
+    │        │      ├── Styles_ScrollBar.xaml
+    │        │      ├── Styles_TabItem.xaml
+    │        │      ├── Styles_TextBox.xaml
+    │        │      ├── Styles_Thumb.xaml
+    │        │      └── Styles_Tooltip.xaml
+    │        │
+    │        ├── Controls.xaml
+    │        └── Styles.xaml
+    │
+    ├── App.xaml
+    ├── AssemblyInfo.cs
+    ├── MainWindow.xaml
+    └── Resources.xaml
+
+```
 
 Simplified Unit Test:
 
@@ -265,36 +417,143 @@ Simplified Unit Test:
 ---
 ```
 
+## ESP32asPLC
+
+  PLC Unit Emulator.
+
+  ![ESP32asPLC](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/7a0f1b09-13c1-4e79-80ee-067c195ef684)
+
+```
+.
+│
+├── src/
+│   │
+│   ├── main.c
+│   ├── MCU.c
+│   └── MCU/
+│         │
+│         └── Instructions.c
+│
+└── include/
+      │
+      ├── MCU/
+      │     │
+      │     ├── Instructions.h
+      │     └── Instructions
+      │            └── Opcode.h
+      │
+      └── GLOBAL/ <------------------------------------------------ Configuration
+            │
+            ├── Types.h
+            └── Project.h
+
+.
+│
+└── UnitTest/
+      ├── src/
+      │     │
+      │     ├── UnitTest.cpp
+      │     └── pch.cpp (Microsoft::VisualStudio::CppUnitTestFramework)
+      │
+      └── include/
+            │
+            ├── MCU.h
+            ├── Opcode.h
+            └── pch.h
+```
+
+Simplified Unit Test:
+
+```
+unsigned char _romProgram[] =
+{
+    SET, 3,
+    ST, 0,
+    ADD, 0,
+    ST, 1
+};
+
+// Define the RAM data
+unsigned char _ramData[256] = { 0 };
+
+// Create MCU simulation:
+MCU_t* _mcuSimulation = new MCU_t(); // Dynamically allocate memory for MCU_t object
+
+// Initialize ROM and RAM data - Conversion from:
+/*
+    MCU_t* _mcuSimulation = MCU
+    (
+        &(MEM_t) { (unsigned char*)_romProgram, sizeof(_romProgram) },
+        & (MEM_t) { _ramData, sizeof(_ramData) }
+    );
+*/
+
+_mcuSimulation->rom.data = new unsigned char[sizeof(_romProgram)];
+memcpy(_mcuSimulation->rom.data, _romProgram, sizeof(_romProgram));
+_mcuSimulation->rom.size = sizeof(_romProgram);
+
+_mcuSimulation->ram.data = new unsigned char[sizeof(_ramData)];
+memcpy(_mcuSimulation->ram.data, _ramData, sizeof(_ramData));
+_mcuSimulation->ram.size = sizeof(_ramData);
+
+// Run the simulation
+_mcuSimulation->Run();
+
+// Verify the result
+Logger::WriteMessage("RAM map:\n");
+for (int i = 0; i < sizeof(_ramData); i++) 
+{
+    Logger::WriteMessage(std::to_string(_ramData[i]).c_str());
+    Logger::WriteMessage(" ");
+}
+
+Assert::AreEqual(static_cast<unsigned char>(6), _ramData[1], L"Value at RAM ADDR = 1 should be 6");
+
+// Free memory
+delete[] _mcuSimulation->rom.data;
+delete[] _mcuSimulation->ram.data;
+delete _mcuSimulation;
+
+```
+
 ## CrowdSimulation
 
   Crowd Simulating Project. Mainly designed for optimization. The main premise in developing this project is for the object not to plan steps ahead.
        
-  ![photo_2024-03-30_09-07-22](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/fd831e81-a8ef-4188-b121-8958c368b772)
+  ![CrowdSimulation](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/cdd85273-41ad-454e-b53f-c3eed58a9e89)
 
 ```
 .
 ├── src/
+│   │
 │   └── main.cpp
+│         │
 │         ├── Scene2D.cpp
 │         └── Scene2D
+│               │
 │               ├── Drawing2D.cpp
 │               └── DynamicObject2D
+│                      │
 │                      ├── DynamicObject2D_Fast.h
 │                      └── Base
+│                            │
 │                            ├── DynamicObject2D.cpp
 │                            └── Random.h
 │
 └── include/
     │
     ├── main
-    │   ├── Scene2D.h
-    │   └── Scene2D
-    │        ├── Drawing2D.h
-    │        └── DynamicObject2D
-    │              ├── DynamicObject2D_Fast.h
-    │              └── Base
-    │                    ├── DynamicObject2D.cpp
-    │                    └── Random.h
+    │     │
+    │     ├── Scene2D.h
+    │     └── Scene2D
+    │            │
+    │            ├── Drawing2D.h
+    │            └── DynamicObject2D
+    │                  │
+    │                  ├── DynamicObject2D_Fast.h
+    │                  └── Base
+    │                        ├── DynamicObject2D.cpp
+    │                        └── Random.h
     │
     └── GLOBAL/ <------------------------------------------------ Configuration
           │
@@ -315,4 +574,24 @@ Simplified Unit Test:
 
 ## License
 
--
+MIT License
+
+Copyright (c) 2024 Damian K.J. Kujawski
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
