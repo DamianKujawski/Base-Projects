@@ -26,6 +26,8 @@
 
 ![neural](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/0f2c472c-2453-43ae-8f2b-82e51f188e38)
 
+Project tree:
+
 ```
 .
 │
@@ -171,6 +173,8 @@ delete _neuralNetwork;
 ## OpenGlParser
 
 ![OpenGlParser](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/d0922a4b-0dfc-4e24-85c0-679c9a000489)
+
+Project tree:
 
 ```
 .
@@ -424,6 +428,8 @@ Simplified Unit Test:
 
   ![ESP32asPLC](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/7a0f1b09-13c1-4e79-80ee-067c195ef684)
 
+  Project tree:
+
 ```
 .
 │
@@ -522,6 +528,8 @@ delete _mcuSimulation;
   Crowd Simulating Project. Mainly designed for optimization. The main premise in developing this project is for the object not to plan steps ahead.
        
   ![CrowdSimulation](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/cdd85273-41ad-454e-b53f-c3eed58a9e89)
+
+  Project tree:
 
 ```
 .
