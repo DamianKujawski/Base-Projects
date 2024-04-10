@@ -2,15 +2,13 @@
 
   Small, base projects, which were used as implementations for larger projects in the future. 
 
- [![BASEPROJECTS](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/e9e7e3e4-7aae-4f8d-a674-9dacb3d9220b)](https://drive.proton.me/urls/QSKM5K9VYW#KMu5IGRUoZN0)
+ https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/17c204aa-e185-4545-b5a6-8f59538db3a7
  
 ## Content
 
   - [Introduction](#Introduction)
   - [Projects](#ESP32asPLC)
   - [License](#License)
-
-
 
 ## Introduction
 
@@ -20,8 +18,6 @@
   - [SmartHome_Editor](#SmartHome_Editor)
   - [ESP32asPLC](#ESP32asPLC)
   - [CrowdSimulation](#CrowdSimulation)
-
-
 
 ## NeuralNetwork
 
