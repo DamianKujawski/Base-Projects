@@ -2,7 +2,7 @@
 
   Small, base projects, which were used as implementations for larger projects in the future. 
 
- [![BASEPROJECTS](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/0f2c472c-2453-43ae-8f2b-82e51f188e38)](https://drive.proton.me/urls/QSKM5K9VYW#KMu5IGRUoZN0)
+ [![BASEPROJECTS](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/7c2559c5-6816-4692-a456-290dc2cf524a)](https://drive.proton.me/urls/QSKM5K9VYW#KMu5IGRUoZN0)
 
 ## Content
 
