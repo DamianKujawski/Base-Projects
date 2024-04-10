@@ -2,7 +2,7 @@
 
   Small, base projects, which were used as implementations for larger projects in the future. 
 
-  [![BaseProjects]([https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/0f2c472c-2453-43ae-8f2b-82e51f188e38))](https://drive.proton.me/urls/QSKM5K9VYW#KMu5IGRUoZN0)
+ [![BASEPROJECTS](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/0f2c472c-2453-43ae-8f2b-82e51f188e38)](https://drive.proton.me/urls/QSKM5K9VYW#KMu5IGRUoZN0)
 
 ## Content
 
