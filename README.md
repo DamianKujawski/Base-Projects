@@ -317,7 +317,7 @@ Simplified Unit Test:
 
 ## SmartHome_Editor
 
-Editor designed for editing Smart Home environment settings.
+Editor designed for configuring Smart Home environment settings.
 
 ![SmartHome_Editor](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/34271491-5f07-4c16-9963-a1e73bfd446b)
 
