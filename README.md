@@ -5,8 +5,6 @@ GOTO: [Base-Projects](https://github.com/DamianKJKujawski/Base-Projects) [Ideas-
 
   Small, base projects, which were used as implementations for larger projects in the future. 
 
-  [Short Video Presentation: BaseProjects - DamianKJKujawski](https://github.com/DamianKJKujawski/Base-Projects/assets/160174331/08ca5b77-bf5a-4aa6-9465-b682acdc85c0)
-
 ## Content
 
   - [Introduction](#Introduction)
